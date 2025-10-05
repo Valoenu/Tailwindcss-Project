@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/feature.js" defer></script>
+    <title>Vusoni</title>
+  </head>
+  <body class="bg-black">
+    <!-- Container For Navbar -->
+    <nav class="container mx-auto relative p-6">    
+      <div class="flex justify-between items-center">      
+        <div class="flex space-x-20 items-center">      
+          <img src="/images/icon-twitter.svg" alt="Logo Element" />      
+          <div class="hidden lg:flex space-x-8 font-bold">
+            <a
+              href="#"
+              class="hover:border-b hover:border-gray-500 text-mediumGray hover:text-lightGray"
+              >Rents</a
+            >
+            <a
+              href="#"
+              class="hover:border-b hover:border-gray-500 text-mediumGray hover:text-lightGray"
+              >Sell</a
+            >
+            <a
+              href="#"
+              class="hover:border-b hover:border-gray-500 text-mediumGray hover:text-lightGray"
+              >Network Events</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Side Navbar -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <a
+            href="#"
+            class="hover:border-b px-8 py-3 hover:border-gray-600 hover:text-gray-100 hover:animate-pulse rounded-2xl text-white bg-black hover:bg-black/80"
+            >Register</a
+          >
+
+          <a
+            href="#"
+            class="px-8 py-3 hover:border-b hover:border-gray-500 hover:text-gray-100 hover:animate-pulse rounded-full text-white bg-black hover:bg-black/80"
+            >Sign In</a
+          >
+        </div>
+
+        <!-- HAMBURGER ELEMENT -->
+        <button
+          type="button"
+          id="menu-btn"
+          class="focus:outline-none hover:animate-pulse block hamburger lg:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE ELEMENT -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-2xl bg-black right-6 left-6 top-20 z-[100]"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 text-white rounded-md"
+        >
+        <!-- This classes below should be reusable - You can add this in input.css -->
+          <a href="#" class="w-full py-3 text-center hover:border-b hover:border-gray-800 hover:text-gray-100 rounded-full text-white bg-black hover:bg-black/80">Privacy</a>
+          <a href="#" class="w-full py-3 text-center hover:border-b hover:border-gray-800 hover:text-gray-100 rounded-full text-white bg-black hover:bg-black/80">Agents</a>
+          <a href="#" class="w-full py-3 text-center hover:border-b hover:border-gray-800 hover:text-gray-100 rounded-full text-white bg-black hover:bg-black/80">AI Models</a>
+          <a href="#" class="w-full py-3 text-center hover:border-b hover:border-gray-800 hover:text-gray-100 rounded-full text-white bg-black hover:bg-black/80"
+            >Subscription</a
+          >
+
+          <a
+            href="#"
+            class="w-full py-3 text-center hover:border-b hover:border-gray-800 hover:text-gray-100 rounded-full text-white bg-black hover:bg-black/80"
+            >Customer Service</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Background -->
+    <section id="hero">
+      <div class="container mx-auto mb-10 flex flex-col-reverse p-6 lg:flex-row">
+        <div class="flex flex-col space-y-10 mb-44 lg:w-1/2 lg:mt-16 xl:mb-52">
+          <h1
+            class="text-5xl font-bold text-white font-heading text-center lg:text-6xl lg:max-w-md lg:text-center"
+          >
+            Platform Showcase
+          </h1>
+
+          <p
+            class="text-2xl text-lightGray font-body lg:max-w-md text-center lg:text-left"
+          >
+           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in 
+
+          </p>
+
+          <div class="mx-auto lg:mx-0">
+            <a
+              href="#"
+              class="py-5 text-xl px-10 hover:border-b hover:border-gray-500 shadow-md hover:text-gray-500 hover:animate-pulse rounded-2xl text-white bg-black hover:bg-black lg:py-4"
+            >
+              Lunvia Concept
+            </a>
+          </div>
+          <div class="mx-auto lg:mx-0">
+            <a
+              href="#"
+              class="py-5 text-xl px-10 hover:border-b hover:border-gray-500 shadow-md hover:text-gray-500 hover:animate-pulse rounded-2xl text-white bg-black hover:bg-black lg:py-4"
+            >
+              Get Started
+            </a>
+          </div>
+          
+        </div>
+
+        <!-- Image Element & Custom Sizing w-180 -->
+        <div class="mb-24 w-140  mx-auto md:w-120 lg:w-1/2 lg:mb-2">
+          <img
+            src="/images/modern-design-five.jpg"
+            alt="Body Image Element"
+            class="rounded-2xl hover:animate-pulse"
+          /> 
+          
+       <!--<video src="images/video.mp4" autoplay muted loop playsinline class="object-cover rounded-2xl transition duration-500"></video>-->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section With Links Elements & Form -->
+    <section id="shorten" class="relative">
+      <!-- Container -->
+      <div class="mx-auto p-6 space-y-6 max-w-4xl mt-16 mb-16">
+        <form
+          id="link-form"
+          class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-black rounded-2xl md:flex-row md:space-y-0 md:space-x-3"
+        >
+          <input
+            id="link-input"
+            placeholder="Enter your email to get real estate updates!"
+            type="text"
+            class="flex-1 p-3 border-2 transition duration-500 rounded-2xl hover:bg-black placeholder-lightGray text-gray-500/80 hover:text-lightGray focus:outline-none"
+          />
+          <button
+            class="px-10 py-3 hover:border-b hover:border-gray-300 hover:text-gray-100 rounded-full text-white bg-black focus:outline-none md:py-2"
+          >
+            Subscribe
+          </button>
+          <div
+            id="error-message"
+            class="absolute left-7 bottom-3 text-red text-sm"
+          ></div>
+        </form>
+
+        <div
+          class="flex flex-col w-full p-6 bg-black rounded-2xl md:flex-row items-center justify-between"
+        >
+          <p class="font-bold text-center text-darkGray md:text-left">
+            North California, GA
+          </p>
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-lightGray">https://northCalifornia@investment.co</div>
+            <button
+              class="p-2 px-8hover:border-b hover:border-gray-800 hover:text-gray-100 hover:animate-pulse rounded-full text-white bg-black hover:bg-black/80 focus:outline-none"
+            > Discover
+              
+            </button>
+          </div>
+        </div>
+
+        
+        <div
+          class="flex flex-col w-full p-6 bg-black rounded-2xl md:flex-row items-center justify-between"
+        >
+          <p class="font-bold text-center text-darkGray md:text-left">
+            Atlanta, GA
+          </p>
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-lightGray">https://atlantaGa@investment.co</div>
+            <button
+              class="p-2 px-8 hover:border-b hover:border-gray-800 hover:text-gray-100 hover:animate-pulse rounded-full text-white bg-black hover:bg-black/80 focus:outline-none"
+            >
+              Discover
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col w-full p-6 bg-black rounded-2xl md:flex-row items-center justify-between"
+        >
+          <p class="font-bold text-center text-darkGray md:text-left">
+            Boston, MA
+          </p>
+          <div
+            class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0"
+          >
+            <div class="font-bold text-lightGray">https://bostonMA@investment.co</div>
+            <button
+              class="p-2 px-8 hover:border-b hover:border-gray-800 hover:text-gray-100 hover:animate-pulse rounded-full text-white bg-black hover:bg-black/80 focus:outline-none"
+            >
+             Discover
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section-->
+    <section id="stats" class="py-24 bg-black">
+      <div class="container mx-auto px-3 mb-44">
+        <h2 class="text-4xl mb-10 font-bold text-center text-white font-heading">
+          Lunvia Company Vision
+        </h2>
+        <p
+          class="mx-auto text-center font-body text-lightGray max-w-xs md:max-w-md"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section id="features" class="bg-black pb-32">
+      <div
+        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+      >
+        <!-- Horizontal -->
+        <div
+          class="hidden animate-pulse absolute w-10/12 top-24 left-16 h-0.5 rounded-full bg-darkGray md:block"
+        ></div>
+
+        <!-- Vertical / Negative ml to back to the center -->
+        <div
+          class="absolute animate-pulse h-full left-1/2 w-0.5 -ml-1 bg-lightGray rounded-full md:hidden"
+        ></div>
+
+        <!-- First card -->
+        <div
+          class="relative flex shadow-2xl shadow-darkGray flex-col md:w-1/3 space-y-6 p-6 bg-black rounded-2xl"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center h-20 w-20 p-4 animate-pulse hover:animate-none bg-black rounded-2xl"
+            >
+              <img src="/images/Lunvia.jpeg" alt="First Card Icon" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center text-white font-heading bg-black capitalize md:text-left"
+          >
+            Text-To-Speech Model
+          </h5>
+          <p class="text-center text-lightGray font-body md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <!-- Second card -->
+        <div
+          class="relative flex flex-col mt-24 shadow-darkGray shadow-2xl md:w-1/3 md:mt-8 space-y-6 p-6 bg-black rounded-2xl"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center h-20 w-20 p-4 animate-pulse hover:animate-none bg-black rounded-full"
+            >
+              <img src="/images/Lunvia.jpeg" alt="Second Card Icon" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center text-white font-heading bg-black capitalize md:text-left"
+          >
+            Calculating ROI
+          </h5>
+          <p class="text-center font-body text-lightGray md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <!-- Third card -->
+        <div
+          class="relative flex shadow-2xl shadow-darkGray flex-col md:w-1/3 space-y-6 bg-black rounded-2xl md:mt-16 mt-24 p-6"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center h-20 w-20 p-4 animate-pulse hover:animate-none bg-black rounded-full"
+            >
+              <img src="/images/Lunvia.jpeg" alt="Third Card Icon" />
+            </div>
+          </div>
+          <h5
+            class="pt-6 text-xl font-bold text-center text-white font-heading bg-black capitalize md:text-left"
+          >
+            Predicting Cash-Flow
+          </h5>
+          <p class="text-center text-lightGray font-body md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Free Above the Footer -->
+    <section id="cta" class="bg-black py-24">
+      <div class="flex flex-col p-2 space-y-6">
+        <h5
+          class="mx-auto space-y-10 text-4xl font-bold text-center text-white"
+        ></h5>
+       <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-8 font-bold text-center text-lightGray font-heading">
+          Stay Ahead with Our Subscription
+        </h2>
+        <p
+          class="mx-auto text-center font-body line-clamp-6 mb-5 text-lightGray max-w-xs md:max-w-md"
+        >
+          Unlock exclusive access to the latest property listings, market insights, and investment opportunities tailored to your needs. With our subscription, you’ll receive curated updates directly to your inbox, ensuring you never miss a deal. Whether you’re searching for your dream home, exploring rental options, or looking to expand your investment portfolio, our service provides reliable and timely information to help you make confident decisions in today’s fast-moving real estate market.
+        </p>
+      </div>
+        <button
+          class="px-10 py-5 mx-auto text-2xl hover:border-b hover:border-gray-600 hover:text-gray-100 hover:animate-pulse rounded-2xl text-white bg-black hover:bg-black/80 md:py-3 focus:outline-none"
+        >
+        Join for free
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Element -->
+    <footer class="bg-black font-body py-16">
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+      >
+        <!-- Footer Brand Image -->
+        <img src="/images/Lunvia.jpeg" alt="Brand Logo" class="mb-20 w-140 mx-auto md:w-75 " />
+
+        <!-- Container For Footer Elements -->
+        <div
+          class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-white"
+        >
+          <!-- Footer First Mini-Container -->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="mb-5 text-pureWhite capitalize">Settings</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a
+                href="#"
+                class="capitalize hover:border-b hover:border-darkGray text-darkGray hover:text-lightGray"
+              >
+                About Lunvia
+              </a>
+              <a
+                href="#"
+                class="capitalize hover:border-b hover:border-darkGray text-darkGray hover:text-lightGray"
+              >
+                Documents
+              </a>
+              <a
+                href="#"
+                class="capitalize hover:border-b hover:border-darkGray text-darkGray hover:text-lightGray"
+              >
+                Agent Contact
+              </a>
+            </div>
+          </div>
+
+        <!-- Social Media / Contact Links -->
+        <div class="flex justify-between w-32 py-1">
+          <a href="#">
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter Icon Link"
+              class="ficon duration-500"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-pinterest.svg"
+              alt="Pinterest Icon Link"
+              class="ficon duration-500"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram Icon Link"
+              class="ficon duration-500"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook Icon Link"
+              class="ficon duration-500"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
