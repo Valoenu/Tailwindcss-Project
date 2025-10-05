@@ -25,3 +25,42 @@ The project is structured as a real estate website example, giving me a playgrou
 
 This repository is purely for personal study and practice.
 If you are also learning Tailwind CSS or web design, you may find some layout or styling examples useful, but this is not a finished project.
+
+
+| Project | Live Demo |
+|---------|-----------|
+| My App  | [Click here](https://tailwindcss-styling-project.vercel.app) |
+
+
+# My Project
+
+| 🌐 Live Site | ⚙️ Tech Stack | 📦 Repository |
+|--------------|--------------|---------------|
+| [Visit Here](https://my-app.vercel.app) | React.js, Node.js, FastAPI | [GitHub Repo](https://github.com/username/repo) |
+
+
+# 🚀 Tailwind CSS Styling Project
+
+✨ **Check out the live preview:** [🌐 Visit Now](https://tailwindcss-styling-project.vercel.app)
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js + Tailwind CSS  
+- **Deployment:** Vercel  
+
+---
+
+## 📦 Repository
+[GitHub Repo](https://github.com/your-username/your-repo)  
+
+---
+
+## 🎯 Features
+- Fully responsive design with Tailwind CSS  
+- Interactive UI components  
+- Smooth transitions and animations  
+
+---
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen)](https://tailwindcss-styling-project.vercel.app)
